@@ -1,6 +1,6 @@
 import Bookmark from "../Bookmark/Bookmark";
 
-const Bookmarks = ({ bookmarks, timeSpent }) => {
+const Bookmarks = ({ bookmarks, timeSpent, handleRemoveFromBookmark }) => {
     return (
         <div className="w-1/3 flex gap-6 flex-col">
             <div className="py-5 px-10 text-center border border-[#6047EC] rounded-xl bg-[rgba(96,71,236,0.10)]">
@@ -10,7 +10,7 @@ const Bookmarks = ({ bookmarks, timeSpent }) => {
                 <div className="flex flex-col gap-4">
                     <h3 className="text-[#111] font-bold text-2xl leading-[38px]">Bookmarked Blogs : {bookmarks.length}</h3>
                     {
-                        bookmarks.map((bookmark, index) => <Bookmark key={index} bookmark={bookmark} />)
+                        bookmarks.map((bookmark, index) => <Bookmark key={index} bookmark={bookmark} handleRemoveFromBookmark={handleRemoveFromBookmark} />)
                     }
                 </div>
             </div>

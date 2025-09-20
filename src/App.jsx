@@ -20,6 +20,11 @@ function App() {
     }
   }
 
+  const handleRemoveFromBookmark = (bookmark) => {
+    setBookmarks(bookmarks.filter(item => item !== bookmark));
+    toast.success("Blog is removed from the Bookmark!")
+  };
+
   const handleMarkAsRead = (reading_time, title) => {
     if(!timeSpent.read.find(item => item === title)) { 
       setTimeSpent({
@@ -51,7 +56,7 @@ function App() {
       <Header />
       <div className='flex gap-6'>
         <Blogs handleBookmark={handleBookmark} handleMarkAsRead={handleMarkAsRead} handleMarkAsUnread={handleMarkAsUnread} />
-        <Bookmarks bookmarks={bookmarks} timeSpent={timeSpent} />
+        <Bookmarks handleRemoveFromBookmark={handleRemoveFromBookmark} bookmarks={bookmarks} timeSpent={timeSpent} />
       </div>
       <ToastContainer/>
     </>
