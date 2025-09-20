@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.postimg.cc/5yyZ165S/1.jpg",
+    "author": "Saimur Rahman",
+    "author_img": "https://i.postimg.cc/xTkW4N10/boy1.png",
+    "published_date": "2025-09-05",
+    "reading_time": "6",
+    "title": "The Rise of Modern Web Layouts with CSS Grid",
+    "tags": ["CSS", "Web Design", "Frontend"]
+  },
+  {
+    "id": 2,
+    "img": "https://i.postimg.cc/T2Nz0JG7/2.png",
+    "author": "Farhana Ali",
+    "author_img": "https://i.postimg.cc/QxRRGNFc/boy2.jpg",
+    "published_date": "2025-09-10",
+    "reading_time": "5",
+    "title": "Unlocking the Power of JavaScript Frameworks",
+    "tags": ["JavaScript", "React", "Frontend"]
+  },
+  {
+    "id": 3,
+    "img": "https://i.postimg.cc/prS3dRqb/3.png",
+    "author": "Sofikul Islam",
+    "author_img": "https://i.postimg.cc/t4W8X06w/girl1.jpg",
+    "published_date": "2025-09-14",
+    "reading_time": "7",
+    "title": "API Development: A Beginner’s Roadmap",
+    "tags": ["API", "Backend", "Web Development"]
+  },
+  {
+    "id": 4,
+    "img": "https://i.postimg.cc/FRD22jSK/4.jpg",
+    "author": "Umme Habiba Israt",
+    "author_img": "https://i.postimg.cc/mr4JkdND/girl2.jpg",
+    "published_date": "2025-09-18",
+    "reading_time": "4",
+    "title": "AI in Everyday Life: How Smart Tech is Changing Us",
+    "tags": ["AI", "Machine Learning", "Innovation"]
+  }
+]
