@@ -1,6 +1,6 @@
 import { FaRegBookmark } from "react-icons/fa6";
 
-const Blog = ({ blog, last_index , handleBookmark, handleMarkAsDone }) => {
+const Blog = ({ blog, last_index , handleBookmark, handleMarkAsRead, handleMarkAsUnread }) => {
     const {id, img, author, author_img, published_date, reading_time, title, tags} = blog;
 
     return (
@@ -25,7 +25,10 @@ const Blog = ({ blog, last_index , handleBookmark, handleMarkAsDone }) => {
                     tags.map((tag, index) => <p key={index} className="text-[rgba(17,17,17,0.60)] text-xl font-medium leading-8">#{tag}</p>)
                 }
             </div>
-            <button className="text-[#6047EC] text-xl font-semibold underline mb-8 cursor-pointer" onClick={() => handleMarkAsDone(parseInt(reading_time), title)}>Mark as read</button>
+            <div className="flex gap-6">
+                <button className="text-[#6047EC] text-xl font-semibold underline mb-8 cursor-pointer" onClick={() => handleMarkAsRead(parseInt(reading_time), title)}>Mark as read</button>
+                <button className="text-[#6047EC] text-xl font-semibold underline mb-8 cursor-pointer" onClick={() => handleMarkAsUnread(parseInt(reading_time), title)}>Mark as unread</button>
+            </div>
             {
                 (id !== last_index && <hr className="text-[rgba(17,17,17,0.10)] mb-10"/>)
             }
