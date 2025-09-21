@@ -1,9 +1,8 @@
 # Knowledge Cafe
 
-A React-based knowledge sharing platform where users can browse through blog posts, bookmark their favorites, and track reading time.
+🌐 **[Live Demo - Click Here to View](https://animated-taste.surge.sh/)**
 
-## 🌐 Live Demo
-**[View Live Site](https://animated-taste.surge.sh/)**
+A React-based knowledge sharing platform where users can browse through blog posts, bookmark their favorites, and track reading time. Experience the live application by visiting the demo link above!
 
 ## ✨ Features
 - Browse through a collection of blog posts
